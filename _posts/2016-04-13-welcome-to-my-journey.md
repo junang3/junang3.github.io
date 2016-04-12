@@ -4,7 +4,7 @@ title:      Welcome to my Journey
 date:       2016-04-13 07:31:19
 author:     Jun Ang
 summary:    One life, enjoy the experience.
-categories: blog
+categories: jekyll
 thumbnail:  heart
 tags:
  - welcome
@@ -12,6 +12,7 @@ tags:
  - my
  - journey
  - junang3
+ - jekyll
 ---
 
 Welcome to my journey.
@@ -19,8 +20,6 @@ Welcome to my journey.
 Just created my [my personal blog][1] in GitHub + Jekyll.
 
 I have been a 'student' of life's experiences for almost 40 years, includes science and technology of course -- my passion.
-
-
 
 One life, enjoy and share more!
 
