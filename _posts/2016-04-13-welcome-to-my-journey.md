@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      Welcome to Carte Noire
-date:       2015-03-23 15:31:19
-author:     Jacob Tomlinson
+title:      Welcome to my journey
+date:       2016-04-13 07:31:19
+author:     Jun Ang
 summary:    Carte Noire is a dark blog theme for Jekyll focusing on a clear reading experience.
 categories: jekyll
 thumbnail:  heart
@@ -25,4 +25,4 @@ but with the hosting and maintenance simplicity of Jekyll.
 
 Please use/copy/share Carte Noire!
 
-[1]: http://www.jacobtomlinson.co.uk/
+[1]: http://junang3.github.io/
