@@ -9,20 +9,16 @@ thumbnail:  heart
 tags:
  - welcome
  - to
- - carte
- - noire
+ - my
+ - journey
 ---
 
-Welcome to Carte Noire.
+Welcome to my journey.
 
-Carte Noire began as a new theme for [my personal blog][1], but has now taken
-on a life of its own as a free theme for Jekyll.
+Just created my [my personal blog][1] in GitHub + Jekyll.
 
-The theme has been designed with simplicity and readability in mind. It makes
-use of third party services such as Disqus ad AddThis to ensure the blog has
-all the features you would expect from a dynamic application such as Wordpress
-but with the hosting and maintenance simplicity of Jekyll.
+I have been a 'student' of life's experiences for almost 40 years, includes science and technology of course -- my passion.
 
-Please use/copy/share Carte Noire!
+One life, enjoy and share more!
 
-[1]: http://www.jacobtomlinson.co.uk/
+[1]: http://junang3.github.io/
