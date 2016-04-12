@@ -2,7 +2,6 @@
 layout:     post
 title:      Welcome to my Journey
 date:       2016-04-13 07:31:19
-author:     Jun Ang
 summary:    One life, enjoy the experience.
 categories: jekyll
 thumbnail:  heart
