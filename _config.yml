@@ -1,11 +1,11 @@
 # Site settings
 title: "JunAng3"
 email: junang3@gmail.com
-description: "A dark blog theme for Jekyll."
+description: "A Journey."
 baseurl: ""
 url: "http://junang3.github.io/"
-title_description: "A dark blog theme for Jekyll."
-title_image: "http://junang3.github.io"
+title_description: "A journey."
+title_image: "http://junang3.github.io/me.png"
 google_analytics: 
 disqus_account: 
 github_repository: https://github.com/jacobtomlinson/carte-noire
