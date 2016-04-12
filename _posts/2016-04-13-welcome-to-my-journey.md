@@ -1,8 +1,6 @@
 ---
 layout:     post
 title:      Welcome to my journey
-date:       2016-04-13 07:31:19
-author:     Jun Ang
 summary:    Carte Noire is a dark blog theme for Jekyll focusing on a clear reading experience.
 categories: jekyll
 thumbnail:  heart
