@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Welcome to my Journey
-date:       2015-03-23 15:31:19
+date:       2016-04-13 07:31:19
 author:     Jun Ang
 summary:    One life, enjoy the experience.
 categories: blog
