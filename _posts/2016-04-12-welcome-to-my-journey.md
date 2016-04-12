@@ -15,7 +15,7 @@ tags:
 
 Welcome to my journey.
 
-Just created my [my personal blog][1] in GitHub + Jekyll.
+Just created [my personal blog][1] in GitHub + Jekyll.
 
 I have been a 'student' of life's experiences for almost 40 years, includes science and technology of course -- my passion.
 
