@@ -17,7 +17,7 @@ Welcome to my journey.
 
 Just created [my personal blog][1] in GitHub + Jekyll.
 
-I have been a 'student' of life's experiences for almost 40 years, includes science and technology, of course -- my passion.
+I have been a 'student' of life's experiences for almost 40 years, and always [in awe][2].
 
 Life, Science and Technology is actually the same:
 
@@ -27,4 +27,4 @@ Life, Science and Technology is actually the same:
 One life, enjoy and share more!
 
 [1]: http://junang3.github.io/
-
+[2]: http://idioms.thefreedictionary.com/in+awe
