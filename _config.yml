@@ -1,1 +1,35 @@
 
+# Site settings
+title: "JunAng3"
+email: junang3@gmail.com
+description: "A Journey."
+baseurl: ""
+url: "http://junang3.github.io/"
+title_description: "A journey."
+title_image: "http://junang3.github.io/me.png"
+google_analytics: 
+disqus_account: 
+github_repository: 
+addthis_id: 
+post_limit: 5
+
+# Social usernames/URLs
+twitter_username: junang3
+github_username: junang3
+linkedin_link: http://junang3.github.io/
+google_plus_link: http://junang3.github.io/
+stackoverflow_link: http://junang3.github.io/
+
+# Footer
+footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/junang3\">Jun Ang</a>"
+footer_right: 
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: pretty
+exclude: [vendor]
