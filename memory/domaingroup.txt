@@ -1,0 +1,14 @@
+setlocal enabledelayedexpansion
+echo off
+for /F "tokens=*" %%A in (userlist.txt) do (
+  echo %%A -------------------------------------------------
+For /F "tokens=*" %%B in (domain_groups.txt) do (
+  echo --%%B
+  net group %%B %%A /delete /DOMAIN
+)
+echo ------- Adding %%A to group : 
+For /F "tokens=*" %%B in (events.txt) do (
+  echo --%%B
+  net group %%B %%A /add /DOMAIN
+)
+)
