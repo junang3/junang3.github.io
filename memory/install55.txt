@@ -1,0 +1,12 @@
+@echo off
+set aaa=\\%1\C$\Users\%2\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\TaskBar\
+set bbb=\\%1\C$\Program Files\
+copy /b/v/y d:\firefox.lnk "%aaa%"
+IF EXIST "%bbb%\mozilla firefox55" (goto exitit)
+echo Copying Firefox version 55
+echo "d:\mozilla firefox55\" "%bbb%\mozilla firefox55" /t /e /i /y
+xcopy "d:\mozilla firefox55" "%bbb%\mozilla firefox55" /t /e /i /y
+:exitit
+echo explorer %aaa%
+echo explorer %bbb%
+echo explorer d:\
