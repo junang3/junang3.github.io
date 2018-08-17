@@ -1,0 +1,50 @@
+@echo off
+set aaa=\\%1\C$\Users\%2\AppData\Local\
+set aa=%aaa%CounterPath\RegNow Basic\default_user
+IF EXIST \\%1\C$ (SET OK=1) ELSE (GOTO ERROR1)
+IF EXIST \\%1\C$\USERS\%2 (SET OK=1) ELSE (GOTO ERROR2)
+
+IF EXIST \\%1\C$\USERS\%2\appdata\CounterPath (goto OK1)
+echo Creating "%aaa%CounterPath\RegNow Basic\default_user"
+mkdir %aaa%CounterPath
+mkdir "%aaa%CounterPath\RegNow Basic"
+mkdir "%aaa%CounterPath\RegNow Basic\default_user"
+
+:OK1
+For /f "tokens=2-4 delims=/ " %%a in ('date /t') do (set mydate=%%c-%%a-%%b)
+For /f "tokens=1-2 delims=/:" %%a in ('time /t') do (set mytime=%%a%%b)
+echo %mydate%_%mytime%
+echo Terminate Eyebeam from machine %1 ...
+pskill \\%1 eyebeam
+
+IF EXIST "%aa%\settings.cps" (SET OK=1) ELSE (goto OK2)
+copy  "%aa%\settings.cps" "%aa%\settings_%1_%mydate%_%mytime%.cps"
+del "%aa%\settings.cps"
+:OK2
+echo Copying settings ...
+echo installing SIP ending %3 ...
+echo ^<?xml version="1.0" encoding="UTF-8" ?^> > "%aa%\settings.cps"
+echo ^<settings version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.counterpath.com/cps"^> >> "%aa%\settings.cps"
+echo ^<domain name="proxies"^> >> "%aa%\settings.cps"
+echo ^<section name="proxy0"^> >> "%aa%\settings.cps"
+echo ^<setting name="authorization_username" value="09178334408%3"/^> >> "%aa%\settings.cps"
+echo ^<setting name="display_name" value="09178334408%3"/^> >> "%aa%\settings.cps"
+echo ^<setting name="domain" value="proxy1.kftel.com"/^> >> "%aa%\settings.cps"
+echo ^<setting name="enabled" value="1"/^> >> "%aa%\settings.cps"
+echo ^<setting name="password" value="cjdekadtptm%3!" encrypted="false"/^> >> "%aa%\settings.cps"
+echo ^<setting name="username" value="09178334408%3"/^> >> "%aa%\settings.cps"
+echo ^</section^>^</domain^>^</settings^> >> "%aa%\settings.cps"
+echo --------- Running eyebeam on %1
+echo --------- not yet working psexec -s -d -i \\%1 cmd /c "c:\Program Files (x86)\CounterPath\eyeBeam 1.5\eyeBeam.exe"
+echo ---------
+dir "%aaa%CounterPath\RegNow Basic\default_user"
+echo ---------
+echo Done!
+goto exit0
+:ERROR1
+echo Error: Host %1 not found or not currently online ...
+goto exit0
+:ERROR2
+echo Error: User %2 does not have a profile on host %1 or user does not exist
+:exit0
+
