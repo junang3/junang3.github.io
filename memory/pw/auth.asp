@@ -142,9 +142,9 @@ End Function
   dim dc
   
   
-  
-  un = "salvador.ang"
-  pw = "mis1001c@"
+  'edit this 20180822
+  un = "..."
+  pw = "..."
 
   a = encode64(encrypt(pw))
   response.write un + "<BR>"
